@@ -10,4 +10,4 @@ touch /var/log/haproxy.log
 tail -f /var/log/haproxy.log &
 
 # Start haproxy
-exec haproxy -f /usr/local/etc/haproxy/haproxy.cfg
+exec /usr/local/sbin/haproxy -f /usr/local/etc/haproxy/haproxy.cfg

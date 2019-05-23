@@ -3,7 +3,7 @@ MAINTAINER RafPe
 
 RUN apt-get update && apt-get install rsyslog -y
 
-ADD haproxy.conf /etc/rsyslog.d
+ADD haproxy.conf /etc/rsyslog.d/haproxy.conf
 ADD rsyslog.conf /etc/rsyslog.conf
 
 COPY docker-entrypoint.sh /
